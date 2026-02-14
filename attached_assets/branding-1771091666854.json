@@ -1,0 +1,114 @@
+{
+  "colorScheme": "dark",
+  "fonts": [
+    {
+      "family": "Roboto Flex",
+      "role": "body"
+    },
+    {
+      "family": "Anton",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#00F050",
+    "accent": "#00F050",
+    "background": "#303030",
+    "textPrimary": "#303030",
+    "link": "#9CA3AF"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Roboto Flex",
+      "heading": "Anton"
+    },
+    "fontStacks": {
+      "heading": [
+        "Anton"
+      ],
+      "body": [
+        "Roboto Flex"
+      ],
+      "paragraph": [
+        "Roboto Flex"
+      ]
+    },
+    "fontSizes": {
+      "h1": "80px",
+      "h2": "60px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#00F050",
+      "textColor": "#212121",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "favicon": "File saved at: attached_assets/favicon.ico",
+    "ogImage": null
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": -1,
+    "reasoning": "None of the logo candidates match the brand 'Tajmirul Islam' as inferred from the page title and URL. All candidates appear to be technology logos unrelated to the personal brand.",
+    "confidence": 0.3,
+    "rejected": true,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Hire Me",
+      "reasoning": "The button with the text 'Hire Me' has a vibrant green background (#00F050), which is a strong indicator of a primary call-to-action. The text is action-oriented, making it the primary CTA."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "There is only one button detected, so no secondary button is available with a different background color."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "tech-savvy professionals"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.9,
+    "overall": 0.9
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": -1,
+        "selectedLogoReasoning": "None of the logo candidates match the brand 'Tajmirul Islam' as inferred from the page title and URL. All candidates appear to be technology logos unrelated to the personal brand.",
+        "confidence": 0.3
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
