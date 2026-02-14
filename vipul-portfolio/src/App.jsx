@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  Menu, X, ArrowRight, Github, Linkedin, 
-  Mail, ExternalLink, Facebook, ArrowUpRight
+  Menu, X, Github, Linkedin, 
+  Mail, ArrowUpRight
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 
@@ -221,12 +221,12 @@ const About = () => (
 );
 
 const Experience = () => {
-  const experiences = [
+  const experiences = useMemo(() => [
     { company: "Strativ AB", role: "Software Engineer (Frontend)", period: "Dec 2024 - Present" },
     { company: "Epikcoders", role: "Frontend Developer", period: "Oct 2023 - Nov 2024" },
     { company: "Anchorblock Technology", role: "Frontend Engineer", period: "Oct 2022 - Sep 2023" },
     { company: "Branex IT", role: "Frontend Developer", period: "Jan 2022 - Oct 2022" }
-  ];
+  ], []);
 
   return (
     <section id="experience" className="py-32 px-6">
@@ -263,12 +263,12 @@ const Experience = () => {
 };
 
 const Projects = () => {
-  const projects = [
+  const projects = useMemo(() => [
     { id: "01", title: "Electro EV", tags: ["Next.js", "Payload CMS", "Tailwind CSS"] },
     { id: "02", title: "Epikcart", tags: ["React", "Redux", "React i18n"] },
     { id: "03", title: "Resume Roaster", tags: ["GPT-4", "Next.js", "PostgreSQL"] },
     { id: "04", title: "Real Estate", tags: ["React.js", "Redux", "Tailwind CSS"] }
-  ];
+  ], []);
 
   return (
     <section id="projects" className="py-32 px-6 bg-[#0f0f0f]">
@@ -343,7 +343,7 @@ const Footer = () => (
   </footer>
 );
 
-function App() {
+export default function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -367,5 +367,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
