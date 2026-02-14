@@ -6,12 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Anton', 'sans-serif'],
+        body: ['"Roboto Flex"', 'sans-serif'],
+      },
       colors: {
-        dark: "#0f172a", // The main background color
-        card: "#1e293b", // The card background
-        primary: "#38bdf8", // The blue accent color
-        text: "#f8fafc",
-        muted: "#94a3b8"
+        primary: "#00F050",
+        dark: "#0a0a0a",
+        card: "#151515",
+        textPrimary: "#f5f5f5",
+        muted: "#9CA3AF"
       }
     },
   },
