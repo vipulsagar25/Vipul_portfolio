@@ -6,11 +6,31 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NAME = 'VIPUL SAGAR';
 const easeOut = [0.16, 1, 0.3, 1];
 
+const letterVariants = (i: number, totalLength: number) => ({
+  initial: { opacity: 0, y: 60 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.05 + i * 0.03,
+    }
+  },
+  exit: { 
+    opacity: 0, 
+    y: 60,
+    transition: {
+      duration: 0.5,
+      delay: 0.05 + (totalLength - 1 - i) * 0.03,
+    }
+  }
+});
+
 export function IntroSplash() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 2500);
+    const timer = setTimeout(() => setShowSplash(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,13 +47,10 @@ export function IntroSplash() {
               {NAME.split('').map((char, i) => (
                 <motion.span
                   key={i}
-                  initial={{ opacity: 0, y: 60 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.45,
-                    delay: 0.08 + i * 0.035,
-                    ease: easeOut,
-                  }}
+                  variants={letterVariants(i, NAME.length)}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
                   className="text-6xl font-heading tracking-tight text-white md:text-8xl lg:text-9xl"
                 >
                   {char === ' ' ? '\u00A0' : char}

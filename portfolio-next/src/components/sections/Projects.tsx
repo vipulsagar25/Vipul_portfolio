@@ -8,17 +8,33 @@ import { ProjectCard } from '@/components/projects/ProjectCard';
 const projects = [
   {
     id: '01',
-    title: 'Women Safety Web Application',
-    tags: ['Flask', 'JavaScript', 'PostgreSQL', 'Google Maps API', 'ML'],
+    title: 'Clinical Co-Pilot',
+    tags: ['Python', 'RAG', 'LangChain', 'ChromaDB', 'FastEmbed', 'LLM Integration'],
     href: '#',
-    description: 'Smart Delhi Ideathon 2025 — 3rd Runner Up among 500+ teams. Full-stack app with real-time GPS tracking, emergency alerts, ML-based risk assessment & safe route recommendation.',
+    description: 'RAG-based Clinical Co-Pilot processing medical PDFs for context-aware responses. Vector database with ChromaDB embeddings, semantic search, and LLM integration with structured prompting to minimize hallucinations.',
+    image: '/co-pilot.png',
   },
   {
     id: '02',
+    title: 'AI-Powered Business Process Automation Suite',
+    tags: ['n8n', 'LLM Integration', 'Workflow Automation', 'Google Sheets', 'API Integrations'],
+    href: '#',
+    description: 'Built end-to-end AI automation workflows integrating LLM agents, Telegram, Gmail, Google Sheets, and Webhooks. Automated lead capture, customer support, and inventory monitoring with conditional logic and structured AI responses.',
+    image: '/automation.png',
+  },
+  {
+    id: '03',
     title: 'Cardiovascular Disease Prediction System',
     tags: ['Python', 'Flask', 'scikit-learn', 'Neural Networks'],
     href: '#',
-    description: 'Ensemble ML models (Random Forest, SVM, Neural Networks) for early heart disease prediction. 97–98% accuracy, 10,000+ patient records, 14 clinical parameters.',
+    description: 'Ensemble ML models for early heart disease prediction. 97–98% accuracy with 10,000+ patient records across 14 clinical parameters.',
+  },
+  {
+    id: '04',
+    title: 'RAG VS Quant',
+    tags: [],
+    href: '#',
+    description: 'Coming soon...',
   },
 ];
 

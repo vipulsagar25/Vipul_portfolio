@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -10,9 +11,10 @@ interface ProjectCardProps {
   href: string;
   index?: number;
   description?: string;
+  image?: string;
 }
 
-export function ProjectCard({ id, title, tags, href, index = 0, description }: ProjectCardProps) {
+export function ProjectCard({ id, title, tags, href, index = 0, description, image }: ProjectCardProps) {
   return (
     <motion.a
       href={href}
@@ -24,9 +26,18 @@ export function ProjectCard({ id, title, tags, href, index = 0, description }: P
       className="group block cursor-pointer"
     >
       <div className="relative aspect-video overflow-hidden rounded-sm border border-white/5 bg-[#1a1a1a] mb-6 transition-all duration-500 group-hover:border-[#00F050]/50">
-        <span className="absolute inset-0 flex items-center justify-center text-8xl font-heading text-white/5 transition-transform duration-500 group-hover:scale-125 group-hover:text-[#00F050]/10">
-          {id}
-        </span>
+        {image ? (
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <span className="absolute inset-0 flex items-center justify-center text-8xl font-heading text-white/5 transition-transform duration-500 group-hover:scale-125 group-hover:text-[#00F050]/10">
+            {id}
+          </span>
+        )}
         <div className="absolute inset-0 bg-transparent transition-colors duration-500 group-hover:bg-[#00F050]/5" />
       </div>
       <div className="flex items-start justify-between gap-4">

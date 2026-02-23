@@ -16,7 +16,7 @@ const stagger = {
 const item = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] },
+  transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
 };
 
 export function Hero() {
@@ -34,7 +34,7 @@ export function Hero() {
               variants={item}
               className="text-sm font-bold tracking-[0.2em] text-[#00F050] md:text-base"
             >
-              AI/ML and LLM Orchestration
+              AI/ML and LLM - RAG Systems
             </motion.p>
             <motion.h1
               variants={item}
@@ -46,8 +46,7 @@ export function Hero() {
 
           <motion.div variants={item} className="mt-8 max-w-md md:mt-0">
             <p className="mb-8 text-lg leading-relaxed text-[#9ca3af]">
-              Pre-final year AI and Data Science student specializing in Machine Learning, Frontend Development,
-              and AI Tool Integration. Ex-Intern at I4C, MHA. Third Runner Up at Smart Delhi Ideathon.
+              I engineer AI systems that go beyond prompts — they retrieve, reason, and act.
             </p>
             <div className="flex items-center gap-6">
               <Button href="/Vipul_1225.pdf" magnetic variant="primary">
@@ -82,12 +81,12 @@ export function Hero() {
           className="grid grid-cols-2 gap-8 border-t border-white/10 py-12 md:grid-cols-3"
         >
           <motion.div variants={item}>
-            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">1+</h3>
+            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">2+</h3>
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Internship Experience</p>
           </motion.div>
           <motion.div variants={item}>
-            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">2+</h3>
-            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Completed Projects</p>
+            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">5+</h3>
+            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Hackathons</p>
           </motion.div>
           <motion.div variants={item} className="hidden md:block">
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">8.7</h3>

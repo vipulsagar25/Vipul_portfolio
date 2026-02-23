@@ -12,6 +12,17 @@ const experiences: Array<{
   highlights?: string[];
 }> = [
   {
+    company: 'Avantyx Solutions',
+    role: 'Web Development Intern',
+    period: '20 Nov 2025 – 20 Feb 2026',
+    location: 'Delhi, India',
+    highlights: [
+      'Built and deployed the official website for Avantyx Solutions, designing the UI/UX structure and ensuring responsive performance for product showcasing and lead generation',
+      'Contributed to early-stage market strategy, assisting in positioning, competitor analysis, and digital branding decisions during the company\'s foundational phase',
+      'Worked closely with the core team from scratch, gaining hands-on exposure to startup operations, decision-making processes, and go-to-market planning',
+    ],
+  },
+  {
     company: 'Indian Cybercrime Coordination Center (I4C), MHA',
     role: 'Data Analytics Intern',
     period: 'June 2025 – Aug 2025',
@@ -57,6 +68,9 @@ export function Experience() {
                     {exp.company}
                   </h3>
                   <p className="text-lg font-medium text-white/90">{exp.role}</p>
+                  {exp.location && (
+                    <p className="text-sm text-[#9ca3af]">{exp.location}</p>
+                  )}
                 </div>
                 {exp.highlights && exp.highlights.length > 0 && (
                   <ul className="mt-4 max-w-xl space-y-2 text-[#9ca3af] md:mt-0">

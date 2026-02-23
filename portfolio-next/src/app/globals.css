@@ -17,7 +17,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; Disabled - handled by Lenis provider */
 }
 
 body {
