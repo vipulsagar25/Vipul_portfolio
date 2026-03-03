@@ -23,8 +23,8 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="mb-6 text-3xl md:text-4xl">Have a project in mind?</h2>
-          <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+          <h2 className="mb-6 text-3xl md:text-5xl font-medium tracking-tight">Ready to build something <span className="text-[#00F050] italic font-serif">extraordinary?</span></h2>
+          <div className="flex flex-col items-center justify-center relative">
             <motion.button
               type="button"
               onClick={handleCopy}
@@ -34,16 +34,17 @@ export function Contact() {
             >
               vipulsagar2004@gmail.com
             </motion.button>
-            <span className="text-sm text-[#9ca3af]">(Click to copy)</span>
-            {copied && (
-              <motion.span
-                initial={{ opacity: 0, y: -4 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-sm text-[#00F050]"
-              >
-                Copied!
-              </motion.span>
-            )}
+            <div className="h-6 mt-2">
+              {copied && (
+                <motion.span
+                  initial={{ opacity: 0, y: -4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-sm text-[#00F050] block text-center"
+                >
+                  Copied!
+                </motion.span>
+              )}
+            </div>
           </div>
         </motion.div>
       </Container>

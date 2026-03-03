@@ -9,12 +9,23 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
           <div className="text-center md:text-left">
             <h2 className="mb-4 text-4xl font-heading">VIPUL SAGAR</h2>
-            <a
-              href="mailto:vipulsagar2004@gmail.com"
-              className="text-xl transition-colors hover:text-[#00F050]"
-            >
-              vipulsagar2004@gmail.com
-            </a>
+            <div className="flex flex-col gap-2 mt-2">
+              <a
+                href="mailto:vipulsagar2004@gmail.com"
+                className="text-xl transition-colors hover:text-[#00F050]"
+              >
+                vipulsagar2004@gmail.com
+              </a>
+              <a
+                href="tel:+919013343450"
+                className="text-xl transition-colors hover:text-[#00F050]"
+              >
+                +91 9013343450
+              </a>
+              <span className="text-xl text-[#9ca3af]">
+                Delhi, India
+              </span>
+            </div>
           </div>
           <div className="flex gap-8">
             {[
