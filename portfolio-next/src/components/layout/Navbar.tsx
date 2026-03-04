@@ -46,7 +46,7 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button href="/Vipul_1225.pdf" variant="primary">
+          <Button href="/vipul_resume.pdf" variant="primary">
             Resume
           </Button>
           <div className="flex gap-4">
@@ -111,7 +111,7 @@ export function Navbar() {
                 {link.name}
               </motion.a>
             ))}
-            <Button href="/Vipul_1225.pdf" variant="primary">
+            <Button href="/vipul_resume.pdf" variant="primary">
               Resume
             </Button>
           </motion.div>

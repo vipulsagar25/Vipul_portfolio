@@ -49,7 +49,7 @@ export function Hero() {
               I engineer AI systems that go beyond prompts — they retrieve, reason, and act.
             </p>
             <div className="flex items-center gap-6">
-              <Button href="/Vipul_1225.pdf" magnetic variant="primary">
+              <Button href="/vipul_resume.pdf" magnetic variant="primary">
                 Resume
               </Button>
               <div className="flex gap-4">
@@ -88,7 +88,7 @@ export function Hero() {
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">5+</h3>
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Hackathons</p>
           </motion.div>
-          <motion.div variants={item} className="hidden md:block">
+          <motion.div variants={item} className="col-span-2 md:col-span-1">
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">8.7</h3>
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">CGPA (Current)</p>
           </motion.div>
