@@ -29,7 +29,7 @@ export function Footer() {
           </div>
           <div className="flex gap-8">
             {[
-              { label: 'GitHub', href: 'https://github.com' },
+              { label: 'GitHub', href: 'https://github.com/vipulsagar25' },
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/vipul-sagar-0264922bb' },
             ].map(({ label, href }) => (
               <a

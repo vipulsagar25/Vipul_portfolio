@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 
@@ -34,7 +34,7 @@ export function Hero() {
               variants={item}
               className="text-sm font-bold tracking-[0.2em] text-[#00F050] md:text-base"
             >
-              AI/ML and LLM - RAG Systems
+              AI / LLM ENGINEER · RAG & AGENTIC SYSTEMS
             </motion.p>
             <motion.h1
               variants={item}
@@ -46,7 +46,7 @@ export function Hero() {
 
           <motion.div variants={item} className="mt-8 max-w-md md:mt-0">
             <p className="mb-8 text-lg leading-relaxed text-[#9ca3af]">
-              I engineer AI systems that go beyond prompts — they retrieve, reason, and act.
+              I build production-grade AI systems — from agentic RAG pipelines and recommendation engines to LLM-powered automation workflows that retrieve, reason, and act.
             </p>
             <div className="flex items-center gap-6">
               <Button href="/vipul_resume.pdf" magnetic variant="primary">
@@ -54,10 +54,11 @@ export function Hero() {
               </Button>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/vipulsagar25"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[#00F050]"
+                  aria-label="GitHub"
                 >
                   <Github size={22} />
                 </a>
@@ -66,8 +67,16 @@ export function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[#00F050]"
+                  aria-label="LinkedIn"
                 >
                   <Linkedin size={22} />
+                </a>
+                <a
+                  href="mailto:vipulsagar2004@gmail.com"
+                  className="transition-colors hover:text-[#00F050]"
+                  aria-label="Email"
+                >
+                  <Mail size={22} />
                 </a>
               </div>
             </div>
@@ -78,19 +87,23 @@ export function Hero() {
           variants={stagger}
           initial="initial"
           animate="animate"
-          className="grid grid-cols-2 gap-8 border-t border-white/10 py-12 md:grid-cols-3"
+          className="grid grid-cols-2 gap-8 border-t border-white/10 py-12 md:grid-cols-4"
         >
           <motion.div variants={item}>
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">2+</h3>
-            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Internship Experience</p>
+            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Internships</p>
           </motion.div>
           <motion.div variants={item}>
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">5+</h3>
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">Hackathons</p>
           </motion.div>
-          <motion.div variants={item} className="col-span-2 md:col-span-1">
+          <motion.div variants={item}>
+            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">6+</h3>
+            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">AI Projects</p>
+          </motion.div>
+          <motion.div variants={item}>
             <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">8.7</h3>
-            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">CGPA (Current)</p>
+            <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">CGPA</p>
           </motion.div>
         </motion.div>
       </Container>

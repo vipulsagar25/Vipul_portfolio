@@ -6,11 +6,13 @@ import { Container } from '@/components/ui/Container';
 
 const stackCategories = [
   {
-    title: 'LLM & Retrieval',
+    title: 'LLM & Agentic AI',
     items: [
-      'Transformer Architecture',
+      'LangChain',
+      'LangGraph',
       'RAG Pipelines',
-      'Chunking Strategies',
+      'Agentic Workflows',
+      'Transformer Architecture',
       'Context Optimization',
     ],
   },
@@ -18,27 +20,53 @@ const stackCategories = [
     title: 'ML & Deep Learning',
     items: [
       'TensorFlow',
+      'Keras',
       'scikit-learn',
       'Neural Networks',
       'Feature Engineering',
+      'Collaborative Filtering',
     ],
   },
   {
-    title: 'Data Systems',
+    title: 'Databases & Vector Stores',
     items: [
       'Neo4j (Graph DB)',
       'PostgreSQL',
       'MongoDB',
-      'Vector Databases',
+      'MySQL',
+      'Qdrant',
+      'ChromaDB',
+      'FAISS',
     ],
   },
   {
-    title: 'Backend & Ops',
+    title: 'Languages',
+    items: [
+      'Python',
+      'SQL',
+      'Java',
+      'JavaScript',
+    ],
+  },
+  {
+    title: 'Backend & APIs',
     items: [
       'FastAPI',
-      'Docker',
-      'Git Workflow',
-      'API Design',
+      'Flask',
+      'REST APIs',
+      'Async Python',
+      'Redis',
+      'n8n',
+    ],
+  },
+  {
+    title: 'LLM APIs & Tools',
+    items: [
+      'OpenAI API',
+      'Groq',
+      'LangSmith',
+      'FastEmbed',
+      'BGE-M3',
     ],
   },
 ];
@@ -47,7 +75,7 @@ const containerVariants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.08,
     },
   },
 };
@@ -60,7 +88,7 @@ const cardVariants = {
 export function About() {
   return (
     <Section id="about" className="relative py-32 bg-[#0f0f0f] overflow-hidden">
-      {/* Optional: Subtle background glow to add depth */}
+      {/* Subtle background glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] bg-[#00F050]/5 blur-[120px] pointer-events-none" />
 
       <Container>
@@ -75,9 +103,9 @@ export function About() {
           <h2 className="text-4xl leading-[1.15] md:text-6xl font-medium tracking-tight text-white">
             I believe in a{' '}
             <span className="font-serif italic font-light text-[#00F050]">
-              data driven
+              systems-first
             </span>{' '}
-            approach, building intelligent solutions that combine AI, analytics, and user-centric design.
+            approach — engineering AI that retrieves, reasons, and acts at production scale.
           </h2>
         </motion.div>
 
@@ -91,27 +119,32 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-[11px] uppercase tracking-[0.4em] text-gray-500 mb-10 font-bold">
-              Experience & Recognition
+              About Me
             </p>
 
             <div className="space-y-8 text-[17px] leading-[1.8] text-gray-400">
               <p>
-                At <span className="text-white font-medium underline decoration-[#00F050]/30 decoration-2 underline-offset-4">I4C (MHA)</span>, I 
-                developed interactive dashboards and graph-based intelligence
-                models using Neo4j, supporting cybercrime analysis workflows
-                for 1,000+ officials.
+                I&apos;m a final-year <span className="text-white font-medium">B.Tech (AI & Data Science)</span> student
+                at <span className="text-white font-medium">VIPS-GGSIPU, Delhi</span> (CGPA: 8.7), building production-grade
+                AI systems — from agentic RAG pipelines to recommendation engines handling millions of data points.
               </p>
 
               <p>
-                At <span className="text-white font-medium">Avantyx Solutions</span>, 
-                I deployed the company’s official digital infrastructure and contributed to
-                early-stage product positioning and AI strategy.
+                At <span className="text-white font-medium underline decoration-[#00F050]/30 decoration-2 underline-offset-4">I4C (Ministry of Home Affairs)</span>,
+                I developed interactive dashboards and graph-based intelligence models using Neo4j, supporting cybercrime
+                analysis workflows for <span className="text-white">1,000+ law enforcement officials</span>.
               </p>
 
               <p>
-                My work focuses on end-to-end <span className="text-white">RAG systems</span>, 
-                FastAPI-based inference services, and AI automation agents optimized through 
-                rigorous feature engineering.
+                At <span className="text-white font-medium">Avantyx Solutions</span>,
+                I deployed the company&apos;s official digital infrastructure and contributed to
+                early-stage product positioning and AI strategy during its foundational phase.
+              </p>
+
+              <p>
+                My work spans end-to-end <span className="text-white">RAG systems</span>,
+                FastAPI-based inference services, <span className="text-white">LLM-powered automation agents</span>,
+                and recommendation engines — all optimized through rigorous feature engineering and robust architecture.
               </p>
 
               <div className="pt-6 space-y-3">
@@ -122,6 +155,14 @@ export function About() {
                 <div className="flex items-center gap-3">
                   <div className="h-[1px] w-8 bg-[#00F050]" />
                   <p className="text-sm font-semibold text-white uppercase tracking-wider">Smart India Hackathon · 2nd Runner-Up</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="h-[1px] w-8 bg-[#00F050]" />
+                  <p className="text-sm font-semibold text-white uppercase tracking-wider">Hack LLM · IIIT Delhi</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="h-[1px] w-8 bg-[#00F050]" />
+                  <p className="text-sm font-semibold text-white uppercase tracking-wider">Appreciation Letter · Deputy Commissioner of Police</p>
                 </div>
               </div>
             </div>
@@ -146,7 +187,6 @@ export function About() {
                   className="group rounded-2xl border border-white/5 bg-white/[0.03] p-6 transition-all duration-500 hover:border-[#00F050]/30 hover:bg-white/[0.06]"
                 >
                   <div className="mb-5">
-                    {/* Fixed Heading: Readable, spaced, and subtle glow */}
                     <h4 className="text-xl font-serif italic font-light text-[#00F050]">
                       {category.title}
                     </h4>
@@ -164,7 +204,7 @@ export function About() {
             </div>
 
             <p className="mt-10 text-[10px] uppercase tracking-[0.3em] text-gray-600 font-medium">
-              Tools: Git · Jupyter · VS Code · Google Colab · Postman
+              Tools: Git · Docker · Jupyter · VS Code · Google Colab · Postman · LangSmith
             </p>
           </motion.div>
 

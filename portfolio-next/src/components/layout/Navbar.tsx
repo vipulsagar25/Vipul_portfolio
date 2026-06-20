@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About Me', href: '#about' },
+  { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
   { name: 'Certificates', href: '#certificates' },
@@ -51,7 +52,7 @@ export function Navbar() {
           </Button>
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/vipulsagar25"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 transition-colors hover:text-[#00F050]"
