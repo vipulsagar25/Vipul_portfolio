@@ -102,7 +102,7 @@ export function Hero() {
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">AI Projects</p>
           </motion.div>
           <motion.div variants={item}>
-            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">8.7</h3>
+            <h3 className="text-4xl font-heading text-[#00F050] md:text-6xl">9</h3>
             <p className="mt-2 text-xs uppercase tracking-widest text-[#9ca3af]">CGPA</p>
           </motion.div>
         </motion.div>
