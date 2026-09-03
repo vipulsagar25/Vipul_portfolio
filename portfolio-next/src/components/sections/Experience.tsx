@@ -41,7 +41,7 @@ const education = {
   degree: 'B.Tech in Artificial Intelligence & Data Science',
   period: '2022 – 2026',
   location: 'Delhi, India',
-  cgpa: '8.7',
+  cgpa: '9',
 };
 
 export function Experience() {

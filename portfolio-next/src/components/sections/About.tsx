@@ -125,7 +125,7 @@ export function About() {
             <div className="space-y-8 text-[17px] leading-[1.8] text-gray-400">
               <p>
                 I&apos;m a final-year <span className="text-white font-medium">B.Tech (AI & Data Science)</span> student
-                at <span className="text-white font-medium">VIPS-GGSIPU, Delhi</span> (CGPA: 8.7), building production-grade
+                at <span className="text-white font-medium">VIPS-GGSIPU, Delhi</span> (CGPA: 9), building production-grade
                 AI systems — from agentic RAG pipelines to recommendation engines handling millions of data points.
               </p>
 
